@@ -1,0 +1,309 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: white;
+    color: black;
+    position: relative;
+    z-index: 1;
+
+    .logo {
+        flex-basis: 25%;
+        text-align: left;
+        padding-left: 10px;
+
+        img {
+            height: 100px;
+            width: auto;
+        }
+    }
+
+    .container {
+
+        flex-basis: 50%;
+        height: 100px;
+        align-items: flex-end;
+    }
+
+    ul {
+        flex-basis: 50%;
+        max-width: 500px;
+        min-width: 300px;
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+        margin-right: 0px;
+        align-content: flex-end;
+        color: #0091A0;
+        height: 100px;
+        justify-content: right;
+        padding-left: 50px;
+    }
+
+    li {
+        padding: 0px max(2.5%, 5px);
+        font-size: 20px;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.dropdown {
+    width: 100px;
+    /* set fixed width to prevent moving */
+    overflow: hidden;
+    /* hide extra text */
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #0091A0;
+    min-width: 100px;
+    /* set minimum width */
+}
+
+.dropdown:hover+.dropdown-content,
+.dropdown-content:hover {
+    display: flex;
+    flex-direction: column;
+    color: white !important;
+    white-space: nowrap;
+    padding: 5px 5px;
+    margin-right: -110px;
+}
+
+.dropdown:hover {
+    text-align: right !important;
+}
+
+.dropdown-fields {
+    color: white;
+}
+
+.navlinks {
+
+    height: auto;
+    position: relative;
+}
+
+.navlinks-contact {
+    height: 12%;
+    min-width: auto;
+}
+
+.separator {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+.hero h1 {
+    color: azure;
+    text-align: center;
+}
+
+
+.custom-container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    background-color: #333;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+footer {
+    background-color: #0091A0;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+footer li {
+    margin-left: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.linkedin-button {
+    background-color: #0077B5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px 5px 0px 5px;
+}
+
+.linkedin-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.linkedin-logo {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.btn-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 5px 0px 5px;
+
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    background-image: radial-gradient(circle farthest-corner at 28% 100%,
+            #fcdf8f 0%,
+            #fbd377 10%,
+            #fa8e37 22%,
+            #f73344 35%,
+            transparent 65%), linear-gradient(145deg, #3051f1 10%, #c92bb7 70%);
+
+}
+
+.btn-instagram:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-instagram-icon {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: right;
+    height: 20%;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.social-icons a {
+    margin-left: auto;
+    margin-right: 10px;
+    color: #000;
+
+    margin-top: 0px;
+}
+
+.panels {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.panel {
+    flex: 1;
+    height: auto;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 20px;
+}
+
+.panel h2 {
+    text-align: center;
+    margin: 0px;
+}
+
+
+.thin-hero {
+    background-color: #f2f2f2;
+    padding: 1em;
+    margin: 10px 0px;
+}
+
+.thin-hero h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.partners img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em;
+}

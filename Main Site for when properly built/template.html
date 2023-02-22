@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_title }}</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+
+    <nav class="desktop-only">
+        <div class="logo">
+            <a href="index.html"><img src="logo.svg" alt="Logo"></a>
+        </div>
+        <div class="container">
+            <ul class="navlinks-contact">
+                <li><a href="#invest" style="color: gray;">Investors</a></li>
+                <li><span class="separator"> // </span></li>
+                <li><a href="#contact" style="color: gray;">Contact</a></li>
+            </ul>
+            <ul class="navlinks">
+                <li>
+                    <a class="dropdown" href="#solutions">Solutions</a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-fields" href="#">Search and Rescue</a>
+                        <a class="dropdown-fields" href="#">Law Enforcement</a>
+                        <a class="dropdown-fields" href="#">Conservation</a>
+                    </div>
+                </li>
+                <li><span class="separator"> // </span></li>
+                <li><a href="#research">Research</a></li>
+                <li><span class="separator"> // </span></li>
+                <li><a href="#about">About</a></li>
+                <li><span class="separator"> // </span></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+    {{ content }}
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Company Name</p>
+            <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body></html>

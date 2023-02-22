@@ -8,24 +8,25 @@ body {
 }
 
 #header {
-  background-color: antiquewhite;
-  height: auto;
-  position: fixed;
-  top: 0;
-  width: 100%;
+    background-color: antiquewhite;
+    height: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 #header h2 {
-  font-style: italic;
-  font-weight: bold;
-  text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
 }
 
 .container {
 
-    margin-top: auto;
+    margin-top: 160px;
     width: 40vw;
-   min-width: 400px;
+    min-width: 400px;
     max-height: 800px;
     max-width: 550px;
 
@@ -37,17 +38,14 @@ body {
 }
 
 h1 {
-    padding: 0px;
+    padding-bottom: 10px;
     margin: 0px;
+    font-weight: bold;
 }
 
 p {
     text-align: justify;
 }
-
-.logo {}
-
-.logo img {}
 
 form {
     max-width: 100%;
@@ -73,7 +71,7 @@ form {
     align-items: center;
     width: 100%;
     max-width:
-    margin-bottom: 10px;
+        margin-bottom: 10px;
 }
 
 label {
@@ -154,7 +152,7 @@ select {
     height: 40px;
     border-radius: 50%;
     margin: 0px 5px 0px 5px;
-    background-color:#FF0000;
+    background-color: #FF0000;
 }
 
 .youtube:hover {
