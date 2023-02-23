@@ -4,118 +4,10 @@ body {
     background-color: white;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 5px;
-    padding-left: 5px;
-    background-color: white;
-    color: black;
-    position: relative;
-    z-index: 1;
-
-    .logo {
-        flex-basis: 25%;
-        text-align: left;
-        padding-left: 10px;
-
-        img {
-            height: 100px;
-            width: auto;
-        }
-    }
-
-    .container {
-
-        flex-basis: 50%;
-        height: 100px;
-        align-items: flex-end;
-    }
-
-    ul {
-        flex-basis: 50%;
-        max-width: 500px;
-        min-width: 300px;
-        display: flex;
-        list-style: none;
-        margin-left: auto;
-        margin-right: 0px;
-        align-content: flex-end;
-        color: #0091A0;
-        height: 100px;
-        justify-content: right;
-        padding-left: 50px;
-    }
-
-    li {
-        padding: 0px max(2.5%, 5px);
-        font-size: 20px;
-    }
-    
-    a {
-        color: black;
-        text-decoration: none;
-    }
-}
-
-.dropdown {
-    width: 100px;
-    /* set fixed width to prevent moving */
-    overflow: hidden;
-    /* hide extra text */
-}
-
-.dropdown-content {
-    display: none;
-    background-color: #0091A0;
-    min-width: 100px;
-    /* set minimum width */
-}
-
-.dropdown:hover+.dropdown-content,
-.dropdown-content:hover {
-    display: flex;
-    flex-direction: column;
-    color: white !important;
-    white-space: nowrap;
-    padding: 5px 5px;
-    margin-right: -110px;
-}
-
-.dropdown:hover {
-    text-align: right !important;
-}
-
-.dropdown-fields {
-    color: white;
-}
-
-.navlinks {
-
-    height: auto;
-    position: relative;
-}
-
-.navlinks-contact {
-    height: 12%;
-    min-width: auto;
-}
-
-.separator {
-    font-weight: bold;
-}
-
 h1 {
     text-align: center;
     margin: 5px;
 }
-
-.hero h1 {
-    color: azure;
-    text-align: center;
-}
-
 
 .custom-container {
     display: flex;
@@ -129,67 +21,35 @@ h1 {
     position: relative;
     height: 500px;
     background-color: #333;
-    z-index: ;
+
+    h1 {
+        color: azure;
+        text-align: center;
+    }
+
+    &-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+    }
 }
 
-.hero-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-
-}
-
-.hero-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-}
-
-footer {
-    background-color: #0091A0;
-    color: #fff;
-    padding: 20px 0;
-}
-
-footer .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-footer li {
-    margin-left: 10px;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
 
 .linkedin-button {
     background-color: #0077B5;
@@ -201,12 +61,12 @@ footer a {
     align-items: center;
 
     margin: 0px 5px 0px 5px;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 }
 
-.linkedin-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
 
 .linkedin-logo {
     width: 20px;
@@ -252,16 +112,14 @@ footer a {
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    a {
+        margin-right: 10px;
+        color: #000;
+    
+        margin-top: 0px;
+    }
 }
 
-.social-icons a {
-    margin-left,
-    margin-right: 10px;
-    color: #000;
-
-    margin-top: 0px;
-}
 
 .panels {
     display: flex;

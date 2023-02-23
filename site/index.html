@@ -2,132 +2,86 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>aeroalpina</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aeroalpina</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <!-- page link dependencies -->
+  <link rel="stylesheet" type="text/css" href="/templates/blocks/navbar/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="/templates/blocks/footer/footer.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <nav class="desktop-only">
-        <div class="logo">
-            <a href="index.html"><img src="logo.svg" alt="Logo"></a>
+  <div id="nav-placeholder"></div>
+
+  <section class="hero">
+    <div class="hero-background">
+      <img src="/images/plane.jpeg" alt="Hero Background" />
+    </div>
+    <div class="hero-text">
+      <h1>Drones for the middle of nowhere</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada
+        faucibus ex, sit amet commodo tellus tincidunt in.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <header class="thin-hero">
+      <h1>Our Partners</h1>
+      <div class="partners">
+        <img src="company-logo-1.png" />
+        <img src="company-logo-2.png" />
+        <img src="company-logo-3.png" />
+        <img src="company-logo-4.png" />
+        <img src="company-logo-5.png" />
+      </div>
+    </header>
+  </section>
+
+  <section>
+    <div class="container" style="background-color: azure; margin: 10px 0px">
+      <h1>Our Aims</h1>
+      <h4 style="text-align: center; margin: 0px">
+        There is nothing on the market that can do all three:
+      </h4>
+      <div class="panels">
+        <div class="panel">
+          <!-- panel 1 content here -->
+          <h2>Multi-Day Flight</h2>
+          <p>
+            There isn't much out there with flight time exceeding 6 hours. The
+            products that do are unable to fulfil our other aims.
+          </p>
         </div>
-        <div class="container">
-            <ul class="navlinks-contact">
-                <li><a href="#invest">Investors</a></li>
-                <li><span class="separator"> // </span></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul class="navlinks">
-                <li>
-                    <a class="dropdown" href="#solutions">Solutions</a>
-                    <div class="dropdown-content">
-                        <a class="dropdown-fields" href="#">Search and Rescue</a>
-                        <a class="dropdown-fields" href="#">Law Enforcement</a>
-                        <a class="dropdown-fields" href="#">Conservation</a>
-                    </div>
-
-
-                </li>
-                <li><span class="separator"> // </span></li>
-                <li><a href="#research">Research</a></li>
-                <li><span class="separator"> // </span></li>
-                <li><a href="#about">About</a></li>
-                <li><span class="separator"> // </span></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
+        <div class="panel">
+          <!-- panel 2 content here -->
+          <h2>Green Fuel</h2>
+          <p></p>
         </div>
-    </nav>
-
-    <nav class="mobile-only">
-        <div class="logo">
-            <a href="index.html"><img src="logo.svg" alt="Logo"></a>
+        <div class="panel">
+          <!-- panel 3 content here -->
+          <h2>Accessibility</h2>
+          <p></p>
         </div>
-        <div>
-            <ul class="navlinks">
-                <li>
-                    <a class="dropdown" href="#solutions">Solutions</a>
-                    <div class="dropdown-content">
-                        <a class="dropdown-fields" href="#">Search and Rescue</a>
-                        <a class="dropdown-fields" href="#">Law Enforcement</a>
-                        <a class="dropdown-fields" href="#">Conservation</a>
-                    </div>
-                </li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul class="navlinks-contact">
-                <li><a href="#invest">Investors</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-
-    </nav>
+      </div>
+    </div>
+  </section>
 
 
+  <div id="footer-placeholder"></div>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("/templates/blocks/navbar/navbar.html");
+    });
+    $(function () {
+      $("#footer-placeholder").load("/templates/blocks/footer/footer.html");
+    });
+  </script>
+</body>
 
-
-
-    <section class="hero">
-        <div class="hero-background">
-            <img src="plane.jpeg" alt="Hero Background">
-        </div>
-        <div class="hero-text">
-            <h1>Drones for the middle of nowhere</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada faucibus ex, sit amet commodo tellus tincidunt in.</p>
-        </div>
-    </section>
-    <section>
-        <header class="thin-hero">
-            <h1>Our Partners</h1>
-            <div class="partners">
-                <img src="company-logo-1.png">
-                <img src="company-logo-2.png">
-                <img src="company-logo-3.png">
-                <img src="company-logo-4.png">
-                <img src="company-logo-5.png">
-            </div>
-        </header>
-    </section>
-
-    <section>
-
-        <div class="container" style="background-color: azure;margin: 10px 0px;">
-            <h1>Our Aims</h1>
-            <h4 style="text-align: center; margin: 0px;">There is nothing on the market that can do all three:</h4>
-            <div class="panels">
-                <div class="panel">
-                    <!-- panel 1 content here -->
-                    <h2>Multi-Day Flight</h2>
-                    <p>There isn't much out there with flight time exceeding 6 hours. The products that do are unable to fulfil our other aims.</p>
-                </div>
-                <div class="panel">
-                    <!-- panel 2 content here -->
-                    <h2>Green Fuel</h2>
-                    <p></p>
-                </div>
-                <div class="panel">
-                    <!-- panel 3 content here -->
-                    <h2>Accessibility</h2>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Company Name</p>
-            <ul>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-    </footer>
-</body></html>
+</html>

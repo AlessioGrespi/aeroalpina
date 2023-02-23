@@ -51,11 +51,15 @@ nav {
     li {
         padding: 0px max(2.5%, 5px);
         font-size: 20px;
+
     }
 
     a {
         color: black;
         text-decoration: none;
+        &:hover{
+            color: #0091A0;
+        }
     }
 
     .separator {
