@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="/templates/blocks/navbar/navbar.css">
+  <link rel="stylesheet" type="text/css" href="/templates/blocks/footer/footer.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+  <div id="nav-placeholder"></div>
+<main style="text-align: left;">
+  Alessio Grespi
+  +44 7490 880680
+  alessiogrespi@gmail.com
+</main>
+
+
+  <div id="footer-placeholder"></div>
+
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("/templates/blocks/navbar/navbar.html");
+      }
+      );
+      $(function () {
+        $("#footer-placeholder").load("/templates/blocks/footer/footer.html");
+      }
+      );
+    </script>
+    <!--end of Navigation bar-->
+</body>
+
+</html>
